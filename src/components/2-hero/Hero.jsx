@@ -31,7 +31,7 @@ const Hero = () => {
                 <a href="https://wa.me/201070076584"><div className="icon icon-whatsapp"></div></a>
                 <a href="https://github.com/Skimo-spec"><div className="icon icon-github"></div></a>
                 <a href="#"><div className="icon icon-linkedin-square"></div></a>
-                <a href="../../../public/CV.pdf" download="" className="btn">Download CV</a>
+                <a href="../../../CV.pdf" download="CV" className="btn">Download CV</a>
             </div>
 
 
