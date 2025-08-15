@@ -27,10 +27,10 @@ const Hero = () => {
             <p className='sub-title'>My name is Hassan Ahmed, I’m a detail-oriented Front-End Developer with hands-on experience from internships at Orbscope, ACS, and the Google Developer Student Club (GDSC), where I contributed to real-world web projects, collaborated in agile teams, and honed my skills in building clean, responsive, and user-centric interfaces.</p>
             
             <div className="all-icons flex">
-                <a href="https://www.instagram.com/_call_me_skimo_?igsh=NDljbnluYzJvaWY2&utm_source=qr"><div className="icon icon-instagram"></div></a>
-                <a href="https://wa.me/201070076584"><div className="icon icon-whatsapp"></div></a>
-                <a href="https://github.com/Skimo-spec"><div className="icon icon-github"></div></a>
-                <a href="#"><div className="icon icon-linkedin-square"></div></a>
+                <a href="https://www.instagram.com/_call_me_skimo_?igsh=NDljbnluYzJvaWY2&utm_source=qr" target="_blank"><div className="icon icon-instagram"></div></a>
+                <a href="https://wa.me/201070076584"><div className="icon icon-whatsapp" target="_blank"></div></a>
+                <a href="https://github.com/Skimo-spec"><div className="icon icon-github" target="_blank"></div></a>
+                <a href="https://www.linkedin.com/in/hassan-ahmed-9a8ba6232/" target="_blank"><div className="icon icon-linkedin-square"></div></a>
                 <a href="../../../Hassan's-CV.pdf" download="CV" className="btn">Download CV</a>
             </div>
 
