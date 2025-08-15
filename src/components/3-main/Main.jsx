@@ -53,14 +53,14 @@ const Main = () => {
                   </p>
                   <div className="flex icons">
                     <div style={{ gap: "11px" }} className="flex">
-                      <a href={item.webLink}>
+                      <a href={item.webLink} target="_blank">
                         <div className="icon-link"></div>
                       </a>
-                      <a href={item.gitLink}>
+                      <a href={item.gitLink} target="_blank">
                         <div className="icon-github"></div>
                       </a>
                     </div>
-                    <a className="link flex" href={item.webLink}>
+                    <a className="link flex" href={item.webLink} target="_blank">
                       More{" "}
                       <span
                         style={{ alignSelf: "end" }}
