@@ -22,7 +22,7 @@ const Hero = () => {
             initial={{opacity:0}}
             animate={{opacity:1}}
             transition={{duration:2}}
-            className='title'>Front-end Developer, UI/UX Designer
+            className='title'>Front-end Developer & UI/UX Designer
             </motion.h1>
             <p className='sub-title'>My name is Hassan Ahmed, I’m a detail-oriented Front-End Developer with hands-on experience from internships at Orbscope, ACS, and the Google Developer Student Club (GDSC), where I contributed to real-world web projects, collaborated in agile teams, and honed my skills in building clean, responsive, and user-centric interfaces.</p>
             
