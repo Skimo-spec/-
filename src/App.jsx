@@ -5,6 +5,7 @@ import Contact from './components/4-contact/Contact'
 import Footer from './components/5-footer/Footer'
 import { useEffect } from 'react'
 import { useState } from 'react'
+import LanguageMarquee from './components/6-languages/LanguageMarquee'
 
 
 function App() {
