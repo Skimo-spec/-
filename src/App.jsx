@@ -21,8 +21,10 @@ function App() {
   const [showScrollBTN, setshowScrollBTN] = useState(false);
   return (
     <div id='up' className='container'>
-      <Header/>
+     <Header/>
       <Hero/>
+      <div className="divider"></div>
+      <LanguageMarquee/>
       <div className="divider"></div>
       <Main/>
       <div className="divider"></div>
