@@ -1,0 +1,105 @@
+/* LanguageMarquee.css - الصِفَة الأساسية */
+/* تعدل الأبعاد والـ gap حسب رغبتك */
+
+.lm-section {
+  padding: 1rem;
+  background: #0f172a10; /* خفيف */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.lm-title {
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+  color: var(--title);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: x-large;
+}
+
+/* الحاوية المتحركة */
+.lm-marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* المسار (مكرر محتوى الصور) */
+.lm-track {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  /* نخلي العرض كبير بما فيه الكفاية بفضل العناصر المكرّرة */
+  animation: marquee 18s linear infinite;
+  will-change: transform;
+}
+
+/* نوقف الحركة بإضافة الصفة paused */
+.lm-marquee.paused .lm-track {
+  animation-play-state: paused;
+}
+
+/* عنصر الصورة */
+.lm-item {
+  flex: 0 0 auto;
+  width: 96px; /* غيّر حسب حاجتك */
+  height: 96px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: transparent;
+  padding: 8px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  transition: transform 220ms ease;
+  cursor: pointer;
+  outline: none;
+}
+
+/* الصورة نفسها - افتراضيًا مونوكروم / شفافة */
+.lm-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%) contrast(0.9) brightness(0.95);
+  opacity: 0.85;
+  transition: filter 180ms ease, opacity 180ms ease, transform 180ms ease;
+  border-radius: 6px;
+}
+
+/* لما نتحويم على العنصر: نُرجع اللون ونكبّره شوية */
+.lm-item:hover img,
+.lm-item:focus img {
+  filter: none;
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+
+
+/* لو أردت أن يُظهر اللون لأداةٍ واحدة بدون إيقاف كامل الحركة:
+   علق السطر الذي يضيف paused class أو لا تستخدم onMouseEnter/onMouseLeave
+*/
+
+/* الحركة: ننقل العرض إلى اليسار بمقدار 50% (لأننا ضاعفنا المحتوى) */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* تحسينات استجابة */
+@media (max-width: 640px) {
+  .lm-item {
+    width: 72px;
+    height: 72px;
+  }
+  .lm-track {
+    gap: 0.6rem;
+    animation-duration: 14s;
+  }
+}
