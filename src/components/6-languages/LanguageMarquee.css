@@ -3,7 +3,6 @@
 
 .lm-section {
   padding: 1rem;
-  background: #0f172a10; /* خفيف */
   border-radius: 12px;
   overflow: hidden;
 }
@@ -103,3 +102,4 @@
     animation-duration: 14s;
   }
 }
+
